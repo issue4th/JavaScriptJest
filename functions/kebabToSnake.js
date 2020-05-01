@@ -1,3 +1,5 @@
-function kebabToSnake(kebabCase) {}
+function kebabToSnake(kebabCase) {
+  return '';
+}
 
 module.exports = { kebabToSnake };
