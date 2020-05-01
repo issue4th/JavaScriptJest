@@ -1,5 +1,5 @@
 function kebabToSnake(kebabCase) {
-  return kebabCase.replace(/-/g, '_');
+  return kebabCase.replace(/-/g, '_').toLowerCase();
 }
 
 module.exports = { kebabToSnake };
