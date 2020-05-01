@@ -25,3 +25,13 @@ describe('factorial test cases', () => {
     expect(() => factorial(-1)).toThrow(RangeError);
   });
 });
+
+describe('fastFactorial test cases', () => {
+  test.each([[0, 1, 2, 3, 4, 100, 200]])('Equals the slow version!', (x) => {
+    expect(fastFactorial(x)).toBe(factorial(x));
+  });
+
+  test('Expected handling of negatives', () => {
+    expect(() => fastFactorial(-1)).toThrow(RangeError);
+  });
+});
