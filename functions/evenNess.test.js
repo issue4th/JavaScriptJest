@@ -1,4 +1,4 @@
-const { isEven, isOdd } = require('./index.js');
+const { isEven, isOdd } = require('./evenNess.js');
 
 test('1 is not even', () => {
   expect(isEven(1)).not.toBe(true);
