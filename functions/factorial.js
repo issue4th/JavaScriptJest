@@ -7,6 +7,10 @@ function factorial(x) {
 }
 
 function fastFactorial(x) {
+  if (x < 0) {
+    return factorial(x);
+  }
+
   let total = 1;
   let factor = x;
 
