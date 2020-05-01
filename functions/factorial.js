@@ -6,6 +6,16 @@ function factorial(x) {
   return x <= 0 ? 1 : x * factorial(x - 1);
 }
 
-function fastFactorial(x) {}
+function fastFactorial(x) {
+  let total = 1;
+  let factor = x;
+
+  while (factor > 1) {
+    total = total * factor;
+    factor -= 1;
+  }
+
+  return total;
+}
 
 module.exports = { factorial, fastFactorial };
