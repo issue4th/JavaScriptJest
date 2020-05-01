@@ -1,6 +1,6 @@
 const { isEven, isOdd } = require('./evenNess.js');
 
-describe('iEven test cases', () => {
+describe('isEven test cases', () => {
   test('1 is not even', () => {
     expect(isEven(1)).not.toBeTruthy();
   });
