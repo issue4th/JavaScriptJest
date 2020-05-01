@@ -1,5 +1,9 @@
 function factorial(x) {
-  return x === 0 ? 1 : x * factorial(x - 1);
+  if (x < 0) {
+    throw RangeError();
+  }
+
+  return x <= 0 ? 1 : x * factorial(x - 1);
 }
 
 function fastFactorial(x) {}
