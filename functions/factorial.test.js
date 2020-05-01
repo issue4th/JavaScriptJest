@@ -22,10 +22,6 @@ describe('factorial test cases', () => {
   });
 
   test('Expected handling of negatives', () => {
-    try {
-      factorial(-1);
-    } catch (err) {
-      expect(typeof err).toBe('RangeError');
-    }
+    expect(() => factorial(-1)).toThrow(RangeError);
   });
 });
