@@ -1,4 +1,6 @@
-function factorial(x) {}
+function factorial(x) {
+  return 0;
+}
 
 function fastFactorial(x) {}
 
