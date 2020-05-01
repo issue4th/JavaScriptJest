@@ -1,5 +1,9 @@
-function isOdd(x) {
-  return true;
+function isEven(x) {
+  return x % 2 === 0;
 }
 
-module.exports = { isOdd };
+function isOdd(x) {
+  return x % 2 === 1;
+}
+
+module.exports = { isEven, isOdd };
