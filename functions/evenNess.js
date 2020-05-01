@@ -2,8 +2,6 @@ function isEven(x) {
   return x % 2 === 0;
 }
 
-function isOdd(x) {
-  return x % 2 === 1;
-}
+const isOdd = (x) => !isEven(x);
 
 module.exports = { isEven, isOdd };
